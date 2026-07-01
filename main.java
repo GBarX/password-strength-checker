@@ -6,7 +6,10 @@ public class main {
 
         String password = "test1234!";
         String password2 = "testlkwq1";
-        String password3 = "AskitomAtAvrat78@{P";
+        String password3 = "qwer125678";
+        String password4 = "1kasd1!DJamsiqkals!?AQsnzjQ@kau";
+        String password5 = "12KAShax";
+        String password6 = "QAZ123ZAQ";
 
         EvaluationResult result = evaluator.evaluate(password3);
 
