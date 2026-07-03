@@ -1,3 +1,7 @@
+package rules;
+
+import result.RuleResult;
+
 public class CharVarietyRule implements Rule {
 
     @Override

@@ -1,3 +1,7 @@
+package rules;
+
+import result.RuleResult;
+
 public class LengthRule implements Rule {
 
     @Override

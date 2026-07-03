@@ -1,6 +1,8 @@
 import java.io.IOException;
 
-public class main {
+import result.EvaluationResult;
+
+public class Main {
     public static void main(String[] args) throws IOException {
         PasswordEvaluator evaluator = new PasswordEvaluator();
 

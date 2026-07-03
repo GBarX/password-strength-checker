@@ -1,6 +1,10 @@
+package rules;
+
 import java.io.*;
 import java.util.HashSet;
 import java.util.Set;
+
+import result.RuleResult;
 
 public class BlackListRule implements Rule {
     private Set<String> commonPasswords = new HashSet<>();

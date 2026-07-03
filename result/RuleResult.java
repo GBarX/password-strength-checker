@@ -1,3 +1,5 @@
+package result;
+
 public class RuleResult {
     private int strength;
     private String feedback;

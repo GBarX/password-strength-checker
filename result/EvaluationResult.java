@@ -1,3 +1,5 @@
+package result;
+
 import java.util.List;
 
 public class EvaluationResult {
