@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+import evaluator.PasswordEvaluator;
 import result.EvaluationResult;
 
 public class Main {
