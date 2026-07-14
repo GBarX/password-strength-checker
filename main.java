@@ -2,6 +2,7 @@ import java.io.IOException;
 
 import evaluator.PasswordEvaluator;
 import generator.GeneratorService;
+import generator.PassphraseGenerator;
 import generator.PasswordGenerator;
 import generator.RandomPasswordGenerator;
 import result.EvaluationResult;
@@ -58,6 +59,20 @@ public class Main {
                 System.out.println("Password: " + gr.getPassword());
                 System.out.println("Level: " + gr.getEvaluation().getLevel());
                 System.out.println("Entropy: " + gr.getEvaluation().getEntropy());
+                break;
+            case 3:
+                System.out.println("How many words? : ");
+                int wordCount = sc.nextInt();
+                sc.nextLine();
+                System.out.println("Enter separator type: ");
+                String separator = sc.nextLine();
+
+                PassphraseGenerator passPhr = new PassphraseGenerator(wordCount, separator);
+                service.setGenerator(passPhr);
+                GenerationResult grP = service.generateValidated();
+                System.out.println("Password: " + grP.getPassword());
+                System.out.println("Password level: " + grP.getEvaluation().getLevel());
+                System.out.println("Entropy: " + grP.getEvaluation().getEntropy());
                 break;
             default:
                 System.out.println("Invalid input!");
